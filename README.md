@@ -40,12 +40,10 @@ Almost everything :) You should use at least one FEATURED IMAGE for each post. I
 
 **Installation Theme:**
 
-* Go to APPEARANCE menu in your WordPress administration panel
-* Click INSTALL THEMES tab
-* Find UPLOAD link
-* Now you can upload antistar.zip file using this form
-
-(more info: http://codex.wordpress.org/Using_Themes)
++ Copy /antistar-theme into your Wordpress theme folder (wp-contents/themes)
++ Go to APPEARANCE menu in your WordPress administration panel
++ Activate Antistar theme
++ For Theme Options, you can use **Antistar** menu on the Admin Bar
 
 ### License
 
