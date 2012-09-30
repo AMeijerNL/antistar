@@ -25,7 +25,7 @@ a:hover, a:focus { color: #e54045; }
 /**
 * Layout
 */
-.container { background:#FFF url('images/bg.png') repeat-y -40px 0; }
+.container { background:#FFF url('images/bg_light.png') repeat-y -40px 0; }
 
 #loader { text-align:center; padding:10px; font-weight:600; }
 #loader img { vertical-align:text-bottom; }
@@ -76,7 +76,7 @@ a:hover, a:focus { color: #e54045; }
 .Main .page-header .subcats ul li a:hover { color:#FFF; background:#333; }
 
 
-.welcome h1 { font:28px Georgia, serif; }
+.welcome h1 { font-size:28px; }
 
 /** 
 * Multi-layout style posts
@@ -219,6 +219,7 @@ a:hover, a:focus { color: #e54045; }
 .post .content p.lead { font-size:18px; }
 .post .content p.lead a { color:#666; }
 .post .content p.lead a:hover { color:#e54045; }
+.post .content ul { list-style:disc; list-style-position:inside; }
 
 .details .post .post-header { border:1px solid #DADADA; margin-bottom:40px; padding:20px 0; border-left:0; border-right:0; }
 .details .post .post-header h1 { font-size:40px; font-weight:300;  margin:0; }
