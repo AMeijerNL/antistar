@@ -16,7 +16,7 @@ body {
 	background: #FFF;
 	font: 13px/21px "Open Sans", Arial, "HelveticaNeue", "Helvetica Neue", Helvetica, sans-serif;
 	color: #333;
-}
+	}
 
 a, a:visited { color: #069; text-decoration: none; outline: 0; }
 a:hover, a:focus { color: #e54045; }
@@ -76,7 +76,7 @@ a:hover, a:focus { color: #e54045; }
 .Main .page-header .subcats ul li a:hover { color:#FFF; background:#333; }
 
 
-.welcome h1 { font-size:28px; }
+.welcome h1 { font:28px Georgia, serif;  }
 
 /** 
 * Multi-layout style posts
