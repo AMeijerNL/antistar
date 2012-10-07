@@ -1,0 +1,314 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Derekk Pan <beytar@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.3\n"
+
+msgid "Site Logo"
+msgstr ""
+
+msgid "Loading"
+msgstr ""
+
+msgid "Nothing found"
+msgstr ""
+
+msgid "Edit"
+msgstr ""
+
+msgid ""
+"Sorry, but nothing matched your search criteria. Please try again with some "
+"different keywords."
+msgstr ""
+
+msgid "Search Results for: %s"
+msgstr ""
+
+msgid "Please edit your sidebar in widget area"
+msgstr ""
+
+msgid "Image Height"
+msgstr ""
+
+msgid "Speed"
+msgstr ""
+
+msgid "Timeout"
+msgstr ""
+
+msgid "Show Navigation"
+msgstr ""
+
+msgid "Link"
+msgstr ""
+
+msgid "Enter the destination URL"
+msgstr ""
+
+msgid "Open link in a new window/tab"
+msgstr ""
+
+msgid "General"
+msgstr ""
+
+msgid "Contact Information"
+msgstr ""
+
+msgid "Address"
+msgstr ""
+
+msgid "Phone"
+msgstr ""
+
+msgid "Email"
+msgstr ""
+
+msgid "Date Format"
+msgstr ""
+
+msgid "Default date format"
+msgstr ""
+
+msgid "Time-ago format"
+msgstr ""
+
+msgid "Pingback:"
+msgstr ""
+
+msgid "Highlights Category"
+msgstr ""
+
+msgid "Blog Category"
+msgstr ""
+
+msgid "Welcome Title"
+msgstr ""
+
+msgid "Welcome Message"
+msgstr ""
+
+msgid "Site Tagline"
+msgstr ""
+
+msgid "Archive"
+msgstr ""
+
+msgid "Category"
+msgstr ""
+
+msgid "Tag"
+msgstr ""
+
+msgid "Social Icons"
+msgstr ""
+
+msgid "%s Options"
+msgstr ""
+
+msgid "Primary Menu"
+msgstr ""
+
+msgid "Secondary Menu"
+msgstr ""
+
+msgid "Homepage (next to the Blog)"
+msgstr ""
+
+msgid "Other pages sidebar"
+msgstr ""
+
+msgid "%s second ago"
+msgstr ""
+
+msgid "%s seconds ago"
+msgstr ""
+
+msgid "%s minute ago"
+msgstr ""
+
+msgid "%s minutes ago"
+msgstr ""
+
+msgid "%s hour ago"
+msgstr ""
+
+msgid "%s hours ago"
+msgstr ""
+
+msgid "%s day ago"
+msgstr ""
+
+msgid "%s days ago"
+msgstr ""
+
+msgid "%s week ago"
+msgstr ""
+
+msgid "%s weeks ago"
+msgstr ""
+
+msgid "%s month ago"
+msgstr ""
+
+msgid "%s months ago"
+msgstr ""
+
+msgid "%s year ago"
+msgstr ""
+
+msgid "%s years ago"
+msgstr ""
+
+msgid "%s decade ago"
+msgstr ""
+
+msgid "%s decades ago"
+msgstr ""
+
+msgid "Reply"
+msgstr ""
+
+msgid "Like"
+msgstr ""
+
+msgid "Unlike"
+msgstr ""
+
+msgid "Next"
+msgstr ""
+
+msgid "Prev"
+msgstr ""
+
+msgid "Yes"
+msgstr ""
+
+msgid "No"
+msgstr ""
+
+msgid "Copyright Note"
+msgstr ""
+
+msgid "Video Embed"
+msgstr ""
+
+msgid "Show all"
+msgstr ""
+
+msgid "Supported sites"
+msgstr ""
+
+msgid "Full List"
+msgstr ""
+
+msgid "URL"
+msgstr ""
+
+msgid "i.e."
+msgstr ""
+
+msgid "Total Blog Posts on Homepage"
+msgstr ""
+
+msgid "Crop Featured Images on Single Pages to Exact Dimensions"
+msgstr ""
+
+msgid "Image Slider"
+msgstr ""
+
+msgid "Display Homepage Slider on mobile devices"
+msgstr ""
+
+msgid "Please set <strong>Featured Image</strong> for each post"
+msgstr ""
+
+msgid ""
+"Please insert some slider images into <strong>Image Slider Category</strong>"
+msgstr ""
+
+msgid ""
+"Please choose <strong>Full Size</strong> and then click <strong>Insert into "
+"Post</strong> button after uploading your image"
+msgstr ""
+
+msgid "Upload Logo"
+msgstr ""
+
+msgid "Primary Menu is empty"
+msgstr ""
+
+msgid "Secondary Menu is empty"
+msgstr ""
+
+#
+# Comments
+#
+msgid ""
+"This post is password protected. Enter the password to view any comments"
+msgstr ""
+
+msgid "Comment navigation"
+msgstr ""
+
+msgid "&larr; Older Comments"
+msgstr ""
+
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+msgid "Comments are closed"
+msgstr ""
+
+msgid "Leave a Comment"
+msgstr ""
+
+msgid "Comment"
+msgstr ""
+
+msgid "Your email address will not be published"
+msgstr ""
+
+msgid "Post Comment"
+msgstr ""
+
+#
+# Slider Image post type
+#
+msgid "Slider Images"
+msgstr ""
+
+msgid "Slider Image"
+msgstr ""
+
+msgid "Add New"
+msgstr ""
+
+msgid "Add New Slider Image"
+msgstr ""
+
+msgid "Edit Slider Image"
+msgstr ""
+
+msgid "New Slider Image"
+msgstr ""
+
+msgid "All Slider Images"
+msgstr ""
+
+msgid "View Slider Image"
+msgstr ""
+
+msgid "Search Slider Images"
+msgstr ""
+
+msgid "No slider image found"
+msgstr ""
+
+msgid "No slider images found in Trash"
+msgstr ""
