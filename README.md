@@ -1,4 +1,4 @@
-Antistar Wordpress Theme
+Screets Antistar WordPress Theme
 ========
 
 **Antistar** is a simple, cute and responsive Wordpress theme which is great for portfolios, artists, small businesses and novices.
