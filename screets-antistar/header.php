@@ -34,6 +34,19 @@ global $opts;
 <![endif]-->
 
 <?php
+// Site Logo
+$sc_logo = (!empty($opts['sc_site_logo'])) ? $opts['sc_site_logo'] : THEME_URL.'/images/logo.png';
+?>
+
+<!-- Facebook Opengraph tags -->
+<meta property="og:title" content="<?php echo sc_page_title(); ?>" />
+<meta property="og:description" content="<?php echo $opts['sc_site_tagline'];?>" />
+<meta property="og:site_name" content="<?php if(!empty($opts['sc_welcome_title'])): echo $opts['sc_welcome_title']; endif; ?>" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="<?php echo HOMEPAGE; ?>" />
+<meta property="og:image" content="<?echo $sc_logo;?>" />
+
+<?php
 	// insert jquery
 	wp_enqueue_script( 'jquery' );
 	
@@ -80,11 +93,6 @@ global $opts;
 	
 	<div class="container">
 		<header class="Sidebar three columns">
-			<?php
-			// Site Logo
-			$sc_logo = (!empty($opts['sc_site_logo'])) ? $opts['sc_site_logo'] : THEME_URL.'/images/logo.png';
-			
-			?>
 			<div class="logo">
 				<a href="<?php echo HOMEPAGE; ?>"><img src="<?echo $sc_logo;?>" class="scale-with-grid" alt=""/></a>
 				<h1><?php echo $opts['sc_site_tagline'];?></h1>
