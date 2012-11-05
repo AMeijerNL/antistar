@@ -49,6 +49,11 @@ $sc_logo = (!empty($opts['sc_site_logo'])) ? $opts['sc_site_logo'] : THEME_URL.'
 <!-- Twitter Cards (fallback to OG tags) -->
 <meta name="twitter:card" content="summary">
 
+<!-- Windows 8: pinned sites -->
+<meta name="msapplication-TileImage" content="<?echo $sc_logo;?>">
+<meta name="msapplication-TileColor" content="#F0F2F0">
+<meta name="title" content="<?php echo sc_page_title(); ?>">
+
 <?php
 	// insert jquery
 	wp_enqueue_script( 'jquery' );
