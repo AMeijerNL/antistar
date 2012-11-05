@@ -46,6 +46,9 @@ $sc_logo = (!empty($opts['sc_site_logo'])) ? $opts['sc_site_logo'] : THEME_URL.'
 <meta property="og:url" content="<?php echo HOMEPAGE; ?>" />
 <meta property="og:image" content="<?echo $sc_logo;?>" />
 
+<!-- Twitter Cards (fallback to OG tags) -->
+<meta name="twitter:card" content="summary">
+
 <?php
 	// insert jquery
 	wp_enqueue_script( 'jquery' );
