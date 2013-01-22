@@ -130,6 +130,7 @@
 		var handler = null;
 		var page = 1;
 		var isLoading = false;
+		var preventLoad = false;
 		var apiURL = '<?php echo THEME_URL; ?>/core/ajax_get_posts.php';
 		
 		// Prepare layout options.
@@ -145,7 +146,7 @@
 		 */
 		function onScroll(event) {
 			// Only check when we're not still waiting for data.
-			if(!isLoading) {
+			if(!isLoading && !preventLoad) {
 				// Check if we're within 100 pixels of the bottom edge of the broser window.
 				var closeToBottom = ($(window).scrollTop() + $(window).height() > $(document).height() - 100);
 				
@@ -179,7 +180,7 @@
 			url			: apiURL,
 			data		: { num_posts : <?php echo get_option('posts_per_page'); ?>, page_no: page  <?php echo (!empty($cat)) ? ', cat_ID:'.$cat : -1; ?> <?php echo (!empty($tag)) ? ", tag:'$tag'" : null; ?>},
 			dataType	: 'html',
-			success: onLoadData
+			success		: onLoadData
 		  });
 		};
 		
@@ -193,11 +194,15 @@
 		  // Increment page index for future calls.
 		  page++;
 		  
-		  // Add image HTML to the page
-		  $('.Multi-layout').append(data);
-		  
-		  // Apply layout.
-		  applyLayout();
+		  if(data.length){
+		  	  // Add image HTML to the page
+			  $('.Multi-layout').append(data);
+			  
+			  // Apply layout.
+			  applyLayout();
+		  }else {
+		  	preventLoad = true;
+		  }
 		};
 	  
 		$(document).ready(new function() {
