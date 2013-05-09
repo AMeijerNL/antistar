@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="Main details twelve columns offset-by-one" role="main">
+<div id="main-content" class="Main details twelve columns offset-by-one" role="main">
 	<?php 
 	// Breadcrumbs
 	require THEME_PATH . '/breadcrumbs.php'; ?>
@@ -11,7 +11,7 @@
 	while ( have_posts() ) : the_post(); ?>
 		
 		<?php 
-		get_template_part( 'post', get_post_format() ); 
+			get_template_part( 'post', get_post_format() ); 
 		?>
 	
 	

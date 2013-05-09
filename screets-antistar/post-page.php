@@ -6,11 +6,9 @@
 		<h1><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 		
 		<?php 
-		// Categories
-		$cats = get_the_category();
-		
+			// Categories
+			$cats = get_the_category();
 		?>
-		
 		
 	</header>
 	

@@ -19,8 +19,10 @@
 			
 			// Categories
 			if($cats){
+
 				$seperator = '&nbsp; &bull; &nbsp;';
 				$output = null;
+				$output = '<span class="visuallyhidden">Categories: </span>';
 				
 				foreach($cats as $c){
 					// don't show highlight category
@@ -39,7 +41,7 @@
 			
 			// Date (in the end for single)
 			if(is_single() or is_page())
-				echo '&nbsp; &mdash; &nbsp;' . sc_get_date();
+				echo '&nbsp; &mdash; &nbsp; <span class="visuallyhidden">Posted: </span>' . sc_get_date();
 			?>
 		</div>
 		

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="Main twelve columns offset-by-one">
+<div id="main-content" class="Main twelve columns offset-by-one">
 	<!-- Welcome -->
 	<div class="welcome row">
 		<?php if(!empty($opts['sc_welcome_title'])): ?>
@@ -213,8 +213,6 @@
 				<a class="button" href="<?php echo get_category_link($opts['sc_blog_cat']);?>"><?php _e('Show all', 'antistar'); ?></a>
 			</div>
 		</div>
-		
-		
 		
 		<!-- Homepage Sidebar -->
 		<div class="Sidebar2 four columns offset-by-one omega" role="complementary">

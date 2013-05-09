@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="Main twelve columns offset-by-one">
+<section id="main-content" class="Main twelve columns offset-by-one">
 	
 	<?php 
 	// Breadcrumbs

@@ -1,58 +1,58 @@
 <?php
-global $opts;
+	global $opts;
 ?>
 <!DOCTYPE html>
 <!--[if IE 6]>
-<html id="ie6" <?php language_attributes(); ?>>
+	<html id="ie6" <?php language_attributes(); ?>>
 <![endif]-->
 <!--[if IE 7]>
-<html id="ie7" <?php language_attributes(); ?>>
+	<html id="ie7" <?php language_attributes(); ?>>
 <![endif]-->
 <!--[if IE 8]>
-<html id="ie8" <?php language_attributes(); ?>>
+	<html id="ie8" <?php language_attributes(); ?>>
 <![endif]-->
 <!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
-<html <?php language_attributes(); ?>>
+	<html <?php language_attributes(); ?>>
 <!--<![endif]-->
 <head>
-<meta charset="<?php bloginfo( 'charset' ); ?>" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta charset="<?php bloginfo( 'charset' ); ?>" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 		
-<title><?php sc_page_title(); ?></title>
-<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<title><?php sc_page_title(); ?></title>
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
 
-<!-- Styles -->
-<link rel="stylesheet" href="<?php echo THEME_URL; ?>/css/base.css">
-<link rel="stylesheet" href="<?php echo THEME_URL; ?>/css/grid.css">
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+	<!-- Styles -->
+	<link rel="stylesheet" href="<?php echo THEME_URL; ?>/css/base.css">
+	<link rel="stylesheet" href="<?php echo THEME_URL; ?>/css/grid.css">
+	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
-<!--[if lt IE 9]>
-<script src="<?php echo THEME_URL; ?>/js/html5.js" type="text/javascript"></script>
-<script src="<?php echo THEME_URL; ?>/js/selectivzr-min.js" type="text/javascript"></script>
-<![endif]-->
+	<!--[if lt IE 9]>
+		<script src="<?php echo THEME_URL; ?>/js/html5.js" type="text/javascript"></script>
+		<script src="<?php echo THEME_URL; ?>/js/selectivzr-min.js" type="text/javascript"></script>
+	<![endif]-->
 
-<?php
-// Site Logo
-$sc_logo = (!empty($opts['sc_site_logo'])) ? $opts['sc_site_logo'] : THEME_URL.'/images/logo.png';
-?>
+	<?php
+	// Site Logo
+	$sc_logo = (!empty($opts['sc_site_logo'])) ? $opts['sc_site_logo'] : THEME_URL.'/images/logo.png';
+	?>
 
-<!-- Facebook Opengraph tags -->
-<meta property="og:title" content="<?php echo sc_page_title(); ?>" />
-<meta property="og:description" content="<?php echo $opts['sc_site_tagline'];?>" />
-<meta property="og:site_name" content="<?php if(!empty($opts['sc_welcome_title'])): echo $opts['sc_welcome_title']; endif; ?>" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="<?php echo HOMEPAGE; ?>" />
-<meta property="og:image" content="<?echo $sc_logo;?>" />
+	<!-- Facebook Opengraph tags -->
+	<meta property="og:title" content="<?php echo sc_page_title(); ?>" />
+	<meta property="og:description" content="<?php echo $opts['sc_site_tagline'];?>" />
+	<meta property="og:site_name" content="<?php if(!empty($opts['sc_welcome_title'])): echo $opts['sc_welcome_title']; endif; ?>" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="<?php echo HOMEPAGE; ?>" />
+	<meta property="og:image" content="<?echo $sc_logo;?>" />
 
-<!-- Twitter Cards (fallback to OG tags) -->
-<meta name="twitter:card" content="summary">
+	<!-- Twitter Cards (fallback to OG tags) -->
+	<meta name="twitter:card" content="summary">
 
-<!-- Windows 8: pinned sites -->
-<meta name="msapplication-TileImage" content="<?echo $sc_logo;?>">
-<meta name="msapplication-TileColor" content="#F0F2F0">
-<meta name="title" content="<?php echo sc_page_title(); ?>">
+	<!-- Windows 8: pinned sites -->
+	<meta name="msapplication-TileImage" content="<?echo $sc_logo;?>">
+	<meta name="msapplication-TileColor" content="#F0F2F0">
+	<meta name="title" content="<?php echo sc_page_title(); ?>">
 
 <?php
 	// insert jquery
@@ -88,22 +88,24 @@ $sc_logo = (!empty($opts['sc_site_logo'])) ? $opts['sc_site_logo'] : THEME_URL.'
 	wp_head();
 ?>
 
-<!-- fancyBox -->
-<link rel="stylesheet" href="<?php echo THEME_URL; ?>/js/fancybox/jquery.fancybox.css?v=2.1.0" type="text/css" media="screen" />
- 
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
-
+	<!-- fancyBox -->
+	<link rel="stylesheet" href="<?php echo THEME_URL; ?>/js/fancybox/jquery.fancybox.css?v=2.1.0" type="text/css" media="screen" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
 
 </head>
-
-<body <?php body_class(); ?>>
-	
+<body <?php body_class(); ?> >
 	
 	<div class="container">
 		<header class="Sidebar three columns">
+			<div class="hidden">
+				<a href="#menu-navigate" class="visuallyhidden focusable">Go to the navigation</a>
+				<a href="#main-content" class="visuallyhidden focusable">Go to the main content</a>
+			</div>
 			<div class="logo">
-				<a href="<?php echo HOMEPAGE; ?>"><img src="<?echo $sc_logo;?>" class="scale-with-grid" alt=""/></a>
-				<h1><?php echo $opts['sc_site_tagline'];?></h1>
+				<a href="<?php echo HOMEPAGE; ?>">
+					<img src="<?echo $sc_logo;?>" class="scale-with-grid" alt=""/>
+					<span class='tagline'><?php echo $opts['sc_site_tagline'];?></span>
+				</a>
 			</div>
 			
 			<aside class="main-nav">
@@ -277,7 +279,7 @@ $sc_logo = (!empty($opts['sc_site_logo'])) ? $opts['sc_site_logo'] : THEME_URL.'
 			
 			<!-- Search form -->
 			<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
-				<input type="text" value="<?php echo @$_GET['s']; ?>" name="s" class="search-field" />
+				<input type="search" value="<?php echo @$_GET['s']; ?>" name="s" class="search-field" placeholder="Search" />
 			</form>
 			
 			<!-- Social Icons -->
@@ -290,34 +292,22 @@ $sc_logo = (!empty($opts['sc_site_logo'])) ? $opts['sc_site_logo'] : THEME_URL.'
 					if(!empty($uri)):
 				?>
 					<li class="<?php echo $class; ?>">
-						<a href="<?php echo $uri; ?>" target="_blank">&nbsp;</a>
+						<a href="<?php echo $uri; ?>" target="_blank"><?php echo $class; ?></a>
 					</li>
 				<?php endif; endforeach; ?>
 			</ul>
 			<?php endif; ?>
 			
-			
-			<!-- Sublinks -->
-			<aside class="sub-nav">
-				<?php
-				// Show Secondary Menu	
-				if(has_nav_menu('sec-menu')):
-				
-					$args = array(
-						'theme_location'	=> 'sec-menu'
-					);
-					wp_nav_menu( $args ); 
-				
-				else: ?>
-					<p>
-						<small style="color:#999; text-transform:none;">
-							(<?php _e('Secondary Menu is empty', 'antistar'); ?>)
-						</small>
-					</p>
-				<?php endif; ?>
-				
-			</aside>
-			
+			<?php
+			// Show Secondary Menu
+			if(has_nav_menu('sec-menu')): //add extra check if menu contains something... ?>
+				<aside class="sub-nav">
+					<?php
+						$args = array( 'theme_location'	=> 'sec-menu' );
+						wp_nav_menu( $args ); 
+					?>
+				</aside>
+			<?php endif; ?>
 			
 			<p class="copyright"><?php echo $opts['sc_copyright_note']; ?></p>
 		</header>
