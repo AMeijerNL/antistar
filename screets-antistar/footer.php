@@ -7,9 +7,27 @@ global $opts;
 	<footer class="bottom">	
 		<!-- First row -->
 		<ul class="contact">
-			<li class="addr"><?php echo $opts['sc_address']; ?></li>
-			<li class="phone"><?php echo $opts['sc_phone']; ?></li>
-			<li class="email"><a href="<?php echo $opts['sc_email']; ?>"><?php echo $opts['sc_email']; ?></a></li>
+			<?php
+				if( !empty($opts['sc_address']) ){
+					?>
+						<li class="addr"><?php echo $opts['sc_address']; ?></li>
+					<?php
+				}
+			?>
+			<?php
+				if( !empty($opts['sc_phone']) ){
+					?>
+						<li class="phone"><?php echo $opts['sc_phone']; ?></li>
+					<?php
+				}
+			?>
+			<?php
+				if( !empty($opts['sc_email']) ){
+					?>
+						<li class="email"><a href="<?php echo $opts['sc_email']; ?>"><?php echo $opts['sc_email']; ?></a></li>
+					<?php
+				}
+			?>
 		</ul>
 		
 		<div class="clearfix"></div>
