@@ -18,7 +18,7 @@ body {
 	color: #333;
 	}
 
-a, a:visited { color: #069; text-decoration: none; outline: 0; }
+a, a:visited { color: #069; text-decoration: none; }
 a:hover, a:focus { color: #e54045; }
 
 
@@ -352,7 +352,7 @@ footer.bottom .contact li.email { background-image:url('images/ico_email.png'); 
 		-webkit-transition: background-position .3s; /* Safari and Chrome */
 		-o-transition: background-position .3s; /* Opera */
 	}
-	.social-icons li a { display: block; width: 24px; height: 24px; text-decoration: none; }
+	.social-icons li a { display: block; width: 24px; height: 24px; text-decoration: none; text-indent: -99999px; }
 	.social-icons li:first-child { margin-left: 0; }
 	.social-icons li.facebook { background-position: -47px 0; }
 		.social-icons li.facebook:hover { background-position: -47px -24px; }
@@ -376,6 +376,8 @@ footer.bottom .contact li.email { background-image:url('images/ico_email.png'); 
 		.social-icons li.digg:hover { background-position: -216px -24px; }
 	.social-icons li.stumbleupon { background-position: -240px 0; }
 		.social-icons li.stumbleupon:hover { background-position: -240px -24px; }
+	.social-icons li.spotify { background-position: -290px 0; }
+		.social-icons li.spotify:hover { background-position: -290px -24px; }
 
 /** Comments */
 #Comments {  }
@@ -542,7 +544,7 @@ a:active img[class*="wp-image-"],
 
     .social-icons li {
     	background-image:  url('images/social_icons@2.png');
-        background-size: 290px 48px;
+        background-size: 315px 48px;
     }
 
 	.Blog h2 { 
@@ -581,3 +583,11 @@ a:active img[class*="wp-image-"],
 		background-size: 12px 8px;
 	}
 }
+
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }

@@ -614,6 +614,12 @@ function sc_theme_render_social_icons($input){
 		<input type="text" name="sc_antistar_theme_options[sc_social_icons][vimeo]" value="<?php echo $opts['sc_social_icons']['vimeo']; ?>" size="50" />
 	</div>
 		
+	<!-- Spotify	-->
+	<div class="sc_row" title="Spotify">
+		<img src="<?php echo THEME_URL;?>/core/images/social_spotify.png" class="sc_social_icon" width="24" height="24" />
+		<input type="text" name="sc_antistar_theme_options[sc_social_icons][spotify]" value="<?php echo $opts['sc_social_icons']['spotify']; ?>" size="50" />
+	</div>
+
 <?php }
 
 /**
